@@ -79,6 +79,7 @@ function onResults(results) {
   if(results.poseLandmarks!=undefined && results.rightHandLandmarks!=undefined && results.leftHandLandmarks!=undefined){
     
     console.log('before prediction')
+    // call predict function from python script here
     socket.emit('upload',results.poseLandmarks,results.leftHandLandmarks,results.rightHandLandmarks)
     console.log('after prediction')
     
