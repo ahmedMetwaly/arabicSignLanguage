@@ -1,0 +1,17 @@
+skia-python==87.1
+Flask>=1.0.0
+opencv-python==4.5.1.48
+opencv-python-headless==4.5.1.48
+opencv-contrib-python-headless==4.5.1.48
+opencv-contrib-python==4.5.1.48
+mediapipe==0.8.4.1
+scikit-learn==0.24.1
+sklearn==0.0
+numpy==1.18.3
+pandas==0.24.2
+flask-socketio==5.0.1
+eventlet==0.30.2
+gunicorn==20.1.0
+pyopenssl==20.0.1
+gTTS==2.2.2
+playsound==1.2.2
