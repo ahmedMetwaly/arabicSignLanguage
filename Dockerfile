@@ -15,4 +15,4 @@ COPY . /app
 
 ENTRYPOINT [ "python" ]
 
-CMD [ "application.py" ]
+CMD [ "signsToApp.py" ]
