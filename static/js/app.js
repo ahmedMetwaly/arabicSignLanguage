@@ -17,9 +17,7 @@ const socket = io();
 const videoElement = document.getElementsByClassName('input_video')[0];
 const canvasElement = document.getElementsByClassName('output_canvas')[0];
 const canvasCtx = canvasElement.getContext('2d');
-function pr (file){
-    document.getElementById("my-audio").setAttribute('src', '../../'+file);
-}
+
 
 function onResults(results) {
   canvasCtx.save();
@@ -55,8 +53,7 @@ function onResults(results) {
   if(results.rightHandLandmarks==undefined || results.leftHandLandmarks==undefined || results.poseLandmarks==undefined){
       Rcounter++;
       if(Rcounter==90){
-        pr('moveBack.mp3')
-        //socket.emit('play','من فضلك ارجع خطوة للخلف')
+        socket.emit('play','من فضلك ارجع خطوة للخلف')
         Rcounter=0
         Stop = false
 
@@ -78,8 +75,7 @@ function onResults(results) {
   if(results.poseLandmarks!=undefined && results.rightHandLandmarks!=undefined && results.leftHandLandmarks!=undefined){
     Pcounter++;
     if(Pcounter==30){
-     // socket.emit('play','start.mp3')
-      pr('start.mp3')
+     socket.emit('play','start.mp3')
       Pcounter=0
     }
       
