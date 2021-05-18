@@ -53,7 +53,7 @@ function onResults(results) {
       Rcounter++;
       if(Rcounter==90){
         //socket.emit('play','moveBack.mp3')
-        var audio = new Audio('moveBack.mp3');
+        var audio = new Audio('../../moveBack.mp3');
         audio.play();
         Rcounter=0
         Stop = false
@@ -77,7 +77,7 @@ function onResults(results) {
     Pcounter++;
     if(Pcounter==30){
       //socket.emit('play','start.mp3')
-      var audio = new Audio('start.mp3');
+      var audio = new Audio('../../start.mp3');
       audio.play();
     }
       
