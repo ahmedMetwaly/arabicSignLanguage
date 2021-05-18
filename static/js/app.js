@@ -56,7 +56,6 @@ function onResults(results) {
       Rcounter++;
       if(Rcounter==90){
         pr('moveBack.mp3')
-        pr('')
         //socket.emit('play','من فضلك ارجع خطوة للخلف')
         Rcounter=0
         Stop = false
@@ -81,7 +80,6 @@ function onResults(results) {
     if(Pcounter==30){
      // socket.emit('play','start.mp3')
       pr('start.mp3')
-      pr('')
       Pcounter=0
     }
       
