@@ -24,11 +24,11 @@ socket.on('voice', function(voice){
   audio.play(); //
 })
 
-socket.on('sleep', function(ms){
-  return new Promise(
-    resolve => setTimeout(resolve, ms)
-  );
-})
+//socket.on('sleep', function(ms){
+//  return new Promise(
+//    resolve => setTimeout(resolve, ms)
+//  );
+//})
 
 
 function onResults(results) {
