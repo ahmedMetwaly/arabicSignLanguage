@@ -33,7 +33,7 @@ def converter(sign):
     elif sign=='arb3a':
         return 'أربعة'                
     elif sign=='5msa':
-        return 'خمسة' 
+        return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/hello.mp3?alt=media&token=56127a86-7d60-49a8-a9e8-76b1353a5aad' 
     elif sign=='sta':
         return 'ستة' 
     elif sign=='sb3a':
@@ -78,7 +78,8 @@ def most_frequent(List):
 def className():
     ClassName = most_frequent(mostAppearence)
     mostAppearence.clear()
-    SpeakSign(converter(ClassName))
+    #SpeakSign(converter(ClassName))
+    emit('voice',converter(ClassName))
     print(ClassName)    
 
     
@@ -98,18 +99,18 @@ def home():
     return render_template('index.html')
 
 
-@socketio.on('talk')
-def SpeakSign(sign):
-    mySign = gTTS(text=sign, lang='ar', slow=False)
-    mySign.save("sign.mp3")
-    playsound("sign.mp3")
-    os.remove("sign.mp3")
+#@socketio.on('talk')
+#def SpeakSign(sign):
+ #   mySign = gTTS(text=sign, lang='ar', slow=False)
+  #  mySign.save("sign.mp3")
+  #  playsound("sign.mp3")
+   # os.remove("sign.mp3")
 
 
 
-@socketio.on('play')
-def Play(audio):
-    playsound(audio)
+#@socketio.on('play')
+#def Play(audio):
+ #   playsound(audio)
 
 
 # In[4]:
