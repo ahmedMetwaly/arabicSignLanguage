@@ -22,7 +22,7 @@ socketio = SocketIO(app)
 
 def converter(sign):
     if sign=='wahed':
-        return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D9%88%D8%A7%D8%AD%D8%AF.mp3?alt=media&token=fa089356-b7f6-412c-9538-9d379a7fa06d
+        return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D9%88%D8%A7%D8%AD%D8%AF.mp3?alt=media&token=fa089356-b7f6-412c-9538-9d379a7fa06d'
     elif sign=='etnyn':
         return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%A7%D8%AB%D9%86%D9%8A%D9%86.mp3?alt=media&token=45013b81-5275-410e-aabc-42aabe83df43' 
     elif sign=='tlata':
