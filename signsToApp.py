@@ -55,9 +55,9 @@ def converter(sign):
         return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%B9%D8%A7%D9%85%D9%84.mp3?alt=media&token=800d9603-52ca-409a-b1ee-907a8411aa51' 
     elif sign=='kwys':
         return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D9%83%D9%88%D9%8A%D8%B3.mp3?alt=media&token=cddbb5a8-5516-4dbc-8e14-f5eacf437199' 
-     elif sign=='4krn':
+    elif sign=='4krn':
         return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%B4%D9%83%D8%B1%D8%A7.mp3?alt=media&token=40f8c9fc-312e-4922-8d62-6c215a96e6c9' 
-     elif sign=='2sf':
+    elif sign=='2sf':
         return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%A7%D8%B3%D9%81.mp3?alt=media&token=9d791e8f-de44-4a03-904a-a10bb5ef9e9d'
     elif sign=='7adr':
         return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%AD%D8%A7%D8%B6%D8%B1.mp3?alt=media&token=80d02f2a-964c-4b2f-91ba-908126f2330c'
