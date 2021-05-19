@@ -24,11 +24,6 @@ socket.on('voice', function(voice){
   audio.play(); //
 })
 
-//socket.on('sleep', function(ms){
-//  return new Promise(
-//    resolve => setTimeout(resolve, ms)
-//  );
-//})
 
 
 function onResults(results) {
@@ -65,8 +60,10 @@ function onResults(results) {
   if(results.rightHandLandmarks==undefined || results.leftHandLandmarks==undefined || results.poseLandmarks==undefined){
       Rcounter++;
       if(Rcounter==90){
-        
-        //socket.emit('play','من فضلك ارجع خطوة للخلف')
+        var srcVoice = 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D9%8A%D8%AF%D9%83%20%D8%BA%D9%8A%D8%B1%20%D9%88%D8%A7%D8%B6%D8%AD%D9%87.mp3?alt=media&token=50709ce5-c3aa-4cf0-bb1f-23bd2ee1dfef'
+        socket.emit('voice',srcVoice)
+        socket.emit('sleep',6)
+        console.log('call after sleep')
         Rcounter=0
         Stop = false
 
@@ -88,6 +85,10 @@ function onResults(results) {
   if(results.poseLandmarks!=undefined && results.rightHandLandmarks!=undefined && results.leftHandLandmarks!=undefined){
     Pcounter++;
     if(Pcounter==30){
+      var srcVoice2 = 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%A7%D8%A8%D8%AF%D8%A3%D8%B9%D9%85%D9%84%20%D8%A7%D9%84%D8%A7%D8%B4%D8%A7%D8%B1%D8%A9.mp3?alt=media&token=e1636125-6106-40f9-9a1c-c82344e2945f'
+      socket.emit('voice',srcVoice)
+      socket.emit('sleep',3)
+      console.log('call after sleep')
      //socket.emit('play','start.mp3')
       Pcounter=0
     }
