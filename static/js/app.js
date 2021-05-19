@@ -19,6 +19,12 @@ const canvasElement = document.getElementsByClassName('output_canvas')[0];
 const canvasCtx = canvasElement.getContext('2d');
 
 
+socket.on('voice', function(voice){
+  document.getElementById("audio").setAttribute('src',voice );
+  audio.play(); //
+})
+
+
 function onResults(results) {
   canvasCtx.save();
   canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
