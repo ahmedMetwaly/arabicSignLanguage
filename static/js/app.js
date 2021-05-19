@@ -20,7 +20,7 @@ const canvasCtx = canvasElement.getContext('2d');
 
 
 socket.on('voice', function(voice){
-  document.getElementById("audio").setAttribute('src',voice );
+  var audio = document.getElementById("audio").setAttribute('src',voice );
   audio.play(); //
 })
 
