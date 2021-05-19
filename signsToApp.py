@@ -11,7 +11,7 @@ import pandas as pd
 from playsound import playsound
 from gtts import gTTS
 import os
-
+import time
 
 # In[2]:
 
@@ -77,9 +77,10 @@ def most_frequent(List):
 
 def className():
     ClassName = most_frequent(mostAppearence)
-    mostAppearence.clear()
     #SpeakSign(converter(ClassName))
     emit('voice',converter(ClassName))
+    mostAppearence.clear()
+
     print(ClassName)    
 
     
@@ -148,6 +149,8 @@ def predict(landmarks):
     if counter==30:
         counter=0
         className()
+        time.sleep(5)
+
     
 
 
