@@ -59,7 +59,8 @@ function onResults(results) {
   if(results.rightHandLandmarks==undefined || results.leftHandLandmarks==undefined || results.poseLandmarks==undefined){
       Rcounter++;
       if(Rcounter==90){
-        socket.emit('play','من فضلك ارجع خطوة للخلف')
+        
+        //socket.emit('play','من فضلك ارجع خطوة للخلف')
         Rcounter=0
         Stop = false
 
@@ -81,7 +82,7 @@ function onResults(results) {
   if(results.poseLandmarks!=undefined && results.rightHandLandmarks!=undefined && results.leftHandLandmarks!=undefined){
     Pcounter++;
     if(Pcounter==30){
-     socket.emit('play','start.mp3')
+     //socket.emit('play','start.mp3')
       Pcounter=0
     }
       
