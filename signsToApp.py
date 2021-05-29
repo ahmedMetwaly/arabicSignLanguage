@@ -89,7 +89,7 @@ def className():
 
     
     
-with ZipFile('signs9.rar', 'r') as zipObj:
+with ZipFile('signs9.zip', 'r') as zipObj:
    # Extract all the contents of zip file in current directory
    zipObj.extractall()
 
