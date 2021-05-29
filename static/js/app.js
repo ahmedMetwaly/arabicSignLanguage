@@ -58,11 +58,9 @@ function onResults(results) {
   if(results.rightHandLandmarks==undefined || results.leftHandLandmarks==undefined || results.poseLandmarks==undefined){
       Rcounter++;
       if(Rcounter==90){
-        voice('https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D9%8A%D8%AF%D9%83%20%D8%BA%D9%8A%D8%B1%20%D9%88%D8%A7%D8%B6%D8%AD%D9%87.mp3?alt=media&token=50709ce5-c3aa-4cf0-bb1f-23bd2ee1dfef')
-        var sc = 6 
-        socket.emit('sleep',sc)
-        console.log('call after sleep')
         Rcounter=0
+        voice('https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D9%8A%D8%AF%D9%83%20%D8%BA%D9%8A%D8%B1%20%D9%88%D8%A7%D8%B6%D8%AD%D9%87.mp3?alt=media&token=50709ce5-c3aa-4cf0-bb1f-23bd2ee1dfef')
+       
         Stop = false
 
       }
@@ -74,10 +72,7 @@ function onResults(results) {
     Pcounter++;
     if(Pcounter==30){
       voice('https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%A7%D8%A8%D8%AF%D8%A3%D8%B9%D9%85%D9%84%20%D8%A7%D9%84%D8%A7%D8%B4%D8%A7%D8%B1%D8%A9.mp3?alt=media&token=e1636125-6106-40f9-9a1c-c82344e2945f')
-      var sc = 3
-      socket.emit('sleep',sc)
-      console.log('call after sleep and all done')
-      Pcounter=0
+    
     }
       
     
