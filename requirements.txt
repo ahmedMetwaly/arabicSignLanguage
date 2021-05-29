@@ -1,3 +1,4 @@
+zip-files==0.4.1
 skia-python==87.1
 Flask>=1.0.0
 opencv-python==4.5.1.48
