@@ -150,7 +150,7 @@ def predict(landmarks):
     if counter==30:
         counter=0
         className()
-        sleep(1)
+        sleep(3)
 
     
 
