@@ -151,6 +151,7 @@ def predict(landmarks):
         counter=0
         className()
         sleep(3)
+        mostAppearence.clear()
 
     
 
