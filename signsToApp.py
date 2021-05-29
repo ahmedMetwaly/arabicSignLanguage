@@ -9,6 +9,8 @@ import numpy as np
 from flask import Flask, render_template
 import pandas as pd
 import time
+from zipfile import ZipFile
+
 
 # In[2]:
 
@@ -86,10 +88,13 @@ def className():
     print(ClassName)    
 
     
+    
+with ZipFile('signs9.zip', 'r') as zipObj:
+   # Extract all the contents of zip file in current directory
+   zipObj.extractall()
 
 
-
-with open('signs4.pkl', 'rb') as f:
+with open('signs9.pkl', 'rb') as f:
     model = pickle.load(f)
 
 
