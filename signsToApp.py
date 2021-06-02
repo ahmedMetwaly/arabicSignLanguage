@@ -47,14 +47,10 @@ def converter(sign):
         return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%A7%D9%87%D9%84%D8%A7%20%D9%88%D8%B3%D9%87%D9%84%D8%A7.mp3?alt=media&token=031d57ea-b9fc-4015-8d5b-8fb09018839b' 
     elif sign=='esmk':
         return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%A7%D8%B3%D9%85%D9%83.mp3?alt=media&token=bb3a1f4f-0de0-4644-a514-39fa0f7e6683'     
-    elif sign=='eyh':
-        return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%A7%D9%8A%D9%87.mp3?alt=media&token=f06d04e0-dade-4bee-83c0-6d513c08cc46' 
     elif sign=='el3nwan':
         return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%A7%D9%84%D8%B9%D9%86%D9%88%D8%A7%D9%86.mp3?alt=media&token=8cad20bd-1d16-4afd-afe2-44699b5e516b'
     elif sign=='nt3rf':
         return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D9%86%D8%AA%D8%B9%D8%B1%D9%81.mp3?alt=media&token=6240fffa-6f01-4025-88de-7122c5e00dc1'      
-    elif sign=='3aml':
-        return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%B9%D8%A7%D9%85%D9%84.mp3?alt=media&token=800d9603-52ca-409a-b1ee-907a8411aa51' 
     elif sign=='kwys':
         return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D9%83%D9%88%D9%8A%D8%B3.mp3?alt=media&token=cddbb5a8-5516-4dbc-8e14-f5eacf437199' 
     elif sign=='4krn':
@@ -63,6 +59,10 @@ def converter(sign):
         return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%A7%D8%B3%D9%81.mp3?alt=media&token=9d791e8f-de44-4a03-904a-a10bb5ef9e9d'
     elif sign=='7adr':
         return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%AD%D8%A7%D8%B6%D8%B1.mp3?alt=media&token=80d02f2a-964c-4b2f-91ba-908126f2330c'
+    elif sign=='fady':
+        return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D9%81%D8%A7%D8%B6%D9%8A.mp3?alt=media&token=606a25eb-4cd0-4e53-96e5-468e0d4fcfb5' 
+    elif sign=='25bark':
+        return 'https://firebasestorage.googleapis.com/v0/b/sign-s-voices.appspot.com/o/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1%D9%83.mp3?alt=media&token=76fc3196-1315-420e-94e8-77e2dff188bb'
     else : return 'لا استطيع فهمك'     
 
 
