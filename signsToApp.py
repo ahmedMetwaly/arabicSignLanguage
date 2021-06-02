@@ -89,12 +89,12 @@ def className():
 
     
     
-with ZipFile('signs9.zip', 'r') as zipObj:
+with ZipFile('signs15.zip', 'r') as zipObj:
    # Extract all the contents of zip file in current directory
    zipObj.extractall()
 
 
-with open('signs9.pkl', 'rb') as f:
+with open('signs15.pkl', 'rb') as f:
     model = pickle.load(f)
 
 
